@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.6 on win32)" generated="20231223 14:07:32.098" rpa="false" schemaversion="4">
+<suite id="s1" name="Hello" source="C:\xampp\htdocs\magang\Hello.robot">
+<test id="s1-t1" name="TestCase1" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 14:07:32.310" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20231223 14:07:32.310" endtime="20231223 14:07:38.276"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://127.0.0.1/magang/login.php</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231223 14:07:38.276" level="INFO">Opening url 'http://127.0.0.1/magang/login.php'</msg>
+<status status="PASS" starttime="20231223 14:07:38.276" endtime="20231223 14:07:38.396"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>username</arg>
+<arg>pradana</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 14:07:38.412" level="INFO">Typing text 'pradana' into text field 'username'.</msg>
+<status status="PASS" starttime="20231223 14:07:38.412" endtime="20231223 14:07:38.619"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 14:07:38.619" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20231223 14:07:38.637" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231223 14:07:38.654" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231223 14:07:38.619" endtime="20231223 14:07:38.654"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231223 14:07:38.655" level="INFO">Clicking button 'submit'.</msg>
+<status status="PASS" starttime="20231223 14:07:38.654" endtime="20231223 14:07:39.125"/>
+</kw>
+<status status="PASS" starttime="20231223 14:07:32.310" endtime="20231223 14:07:39.125"/>
+</test>
+<status status="PASS" starttime="20231223 14:07:32.098" endtime="20231223 14:07:39.127"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Hello">Hello</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
